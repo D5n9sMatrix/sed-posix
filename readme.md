@@ -73,6 +73,72 @@ $specfile->VERSION(@ARG);
 __END__
 ```
 
+COMMAND_USAGE:
+
+CD BIN ..
+
+DIGIT CONSOLE TERMINAL TO WELL RATES
+
+```
+awk 'WellRates > 0' input.txt > output.txt
+```
+
+DIGIT CONSOLE TERMINAL TO BEGIN
+
+```
+awk 'BEGIN { for (i = 1; i <= 7; i++)
+print int(101 * rand()) }' input.txt > output.txt
+```
+DIGIT CONSOLE TERMINAL TO BEGIN
+
+```
+ls -l input.txt > output.txt | awk '{ x += $5 }
+END { print "total result: " x }'
+```
+
+DIGIT CONSOLE TERMINAL TO BEGIN
+
+```
+cat input.txt
+```
+
+DIGIT CONSOLE TERMINAL TO BEGIN
+
+```
+ls -l input.txt > output.txt | awk '{ x += $5 }
+END { print "total result:", x / 1024 }'
+```
+
+DIGIT CONSOLE TERMINAL TO BEGIN
+
+```
+awk 'END { print NR }' input.txt > output.txt
+```
+
+DIGIT CONSOLE TERMINAL TO BEGIN
+
+```
+awk 'NR % 2 == 0' input.txt > output.txt
+```
+
+DIGIT CONSOLE TERMINAL TO BEGIN
+
+```
+awk '/12/ { print $0 } /21/ { print $0 }' input.txt > output.txt
+```
+
+DIGIT CONSOLE TERMINAL TO BEGIN
+
+```
+awk '/12/ { print $0 } /27/ { print $0 }' input.txt > output.txt
+```
+
+DIGIT CONSOLE TERMINAL TO BEGIN
+
+```
+ls -l | awk '$6 == "Nov" { sum += $5 } END { print sum }' input.txt > output.txt
+```
+
 LICENSE
 
 MIT Microsoft 
